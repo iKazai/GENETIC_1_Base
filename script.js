@@ -1,6 +1,9 @@
-// Genetic Algorithm Project
-// Working with 5 words of 8 bits each from {0,1}*
-// Goal: maximize the number of 1s in the words through generations
+wl = document.getElementById("word-list").children;
 
-// Your code goes here
-console.log("Genetic Algorithm initialized!");
+for (let i = 0; i < wl.length; i++) {
+    word = ""
+    for (let j = 0; j < 8; j++) {
+        word += Math.random() > 0.5 ? 0 : 1;
+    }
+    wl[i].textContent = word
+}

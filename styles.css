@@ -8,6 +8,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     padding: 2vh 2vw;
+    font-size: 1em; /* Taille de base pour le texte */
 }
 
 .container {
@@ -17,6 +18,9 @@ body {
     padding: 3vh 3vw;
     border-radius: 0.8vw;
     box-shadow: 0 0.2vh 1vw rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -24,20 +28,45 @@ h1 {
     margin-bottom: 2vh;
 }
 
+h2, h3 {
+    margin-bottom: 2vh; /* Espacement vertical basé sur la hauteur de l'écran */
+}
+
 p {
     color: #666;
-    margin-bottom: 2vh;
+    margin-bottom: 1.5em; /* Espacement relatif à la taille du texte */
     line-height: 1.6;
 }
 
 #output {
-    margin: 3vh 3vw 3vw 3vw;
-    padding: 2vh 2vw 2vw 2vw;
-    background-color: #f9f9f9;
-    border-radius: 0.4vw;
+    padding: 5vh 5vw;
+    background-color: #ffe1e1;
     min-height: 10vh;
 
     display: flex;
     flex-direction: row;
     gap: 10vw;
+
+    overflow: auto; /* Permet de gérer les débordements */
+    box-sizing: border-box; /* Assure que padding et bordures sont inclus dans la largeur/hauteur */
+}
+
+#output ul {
+    margin: 0; /* Supprime les marges par défaut */
+    padding-left: 1em; /* Utilise em pour un espacement relatif au texte */
+}
+
+.buttons {
+    padding: 1em;
+    display:flex;
+    gap: 1em;
+}
+
+.buttons button {
+    padding : 0.5em;
+    cursor:pointer;
+}
+
+#reset-btn {
+    background-color: #ffa3a3;
 }

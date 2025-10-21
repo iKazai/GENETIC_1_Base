@@ -9,10 +9,28 @@
 <body>
     <div class="container">
         <h1>Genetic Algorithm</h1>
-        <p>This is a genetic algorithm project working with 5 words of 8 bits each.</p>
-        
+        <p>This is a genetic algorithm project working with 10 words of 8 bits each.</p>
+        <p id="generation-info">
+            Generation: <span id="generation-number">0</span>
+        </p>
+        <div class="buttons">
+            <button id="generate-btn">Generate a population</button>
+            <button id="sort-btn">Sort the population</button>
+            <button id="mutate-btn">Mutate the best</button>
+            <button id="reset-btn">Reset the experiment</button>
+        </div>
         <div id="output">
             <ul id="word-list">
+                <li class="word">
+                </li>   
+                <li class="word">
+                </li>   
+                <li class="word">
+                </li>   
+                <li class="word">
+                </li>   
+                <li class="word">
+                </li>  
                 <li class="word">
                 </li>   
                 <li class="word">
@@ -25,17 +43,27 @@
                 </li>    
             </ul>
 
-            <ul class="modified-word-list">
-                <li class="word mod-word1">
+            <ul id="mutated-word-list">
+                <li class="word">
                 </li>   
-                <li class="word mod-word2">
+                <li class="word">
                 </li>   
-                <li class="word mod-word3">
+                <li class="word">
                 </li>   
-                <li class="word mod-word4">
+                <li class="word">
                 </li>   
-                <li class="word mod-word5">
-                </li>    
+                <li class="word">
+                </li>
+                <li class="word">
+                </li>   
+                <li class="word">
+                </li>   
+                <li class="word">
+                </li>   
+                <li class="word">
+                </li>   
+                <li class="word">
+                </li>      
             </ul>
         </div>
     </div>
